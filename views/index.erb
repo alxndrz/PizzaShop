@@ -3,13 +3,17 @@
 <div class="row">
 
   <% @products.each do |p|%>
-  <div class="col-md-3">
+  <div class="col-md-auto">
     <div>
       <%= p.title %>
     </div>
 
     <div> 
       <img src="<%= p.path_to_image %>" alt=""> 
+    </div>
+
+    <div> 
+      <%= p.price %> RUB
     </div>
 
      <div> 
