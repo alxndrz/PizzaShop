@@ -5,6 +5,7 @@ function add_to_cart(id) {
   window.localStorage.setItem(key, x);
 
   update_orders_input();
+  update_orders_btn();
 }
 
 function cart_get_number_of_items() {
@@ -40,4 +41,9 @@ function cart_get_orders() {
     }
   }
   return orders;
+}
+
+function update_orders_btn() {
+  var text = 'Cart (' + cart_get_number_of_items() + ')';
+  $('#orders_btn').val(text);
 }
