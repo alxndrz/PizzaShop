@@ -22,3 +22,4 @@ function cart_get_number_of_items() {
   }
   return cnt;
 }
+

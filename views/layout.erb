@@ -29,7 +29,10 @@
 						<a class="nav-item nav-link" href="/about">About</a>
 					</div>
 				</div>
-				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cart</button>
+				<form action="/cart" method="POST">
+					<input type="text" name="orders">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cart</button>
+				</form>
 			</nav>
 
 
